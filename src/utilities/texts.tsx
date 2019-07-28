@@ -1,5 +1,6 @@
 export const texts = {
-  app_intro: "This is an example app. It contains 3 screens: Subscription Selection, Account Selection, and User Info.",
+  app_intro:
+    "This is an example app. It contains 3 screens: Subscription Selection, Account Selection, and User Info.",
   select_subscriptions: "Select available subscriptions.",
   select_account: "Select Account",
   logged_user: "Logged User Information",
@@ -11,5 +12,6 @@ export const texts = {
   remove_account: "Remove Account",
   add_account: "Add Account",
   are_you_sure: "Are you sure?",
-  need_subscription_owner: "You need to be a subscription owner to procceed with this operation"
-}
+  need_subscription_owner:
+    "You need to be a subscription owner to procceed with this operation"
+};
