@@ -9,26 +9,29 @@ function resolveOnDelay(res, delay) {
 
 export async function getSubscriptions() {
   return new Promise(resolve => {
-    resolveOnDelay(() => resolve(subscriptions), 1500);
+    resolveOnDelay(() => resolve(subscriptions.subscriptions), 1500);
   });
 }
 
-export async function getAccounts(subscriptionId: string) {
+export async function getAccounts(subscriptionId: string, dude: number) {
   return new Promise(resolve => {
     resolveOnDelay(
       () =>
         resolve(
-          accounts.find(account => account.subscriptionId === subscriptionId)
+          accounts.accounts.find(
+            account => account.subscription_id === subscriptionId
+          )
         ),
       1500
     );
   });
 }
 
+new Array().find;
 export async function getUser(userId: string) {
   return new Promise(resolve => {
     resolveOnDelay(
-      () => resolve(accounts.find(account => account.id === userId)),
+      () => resolve(accounts.accounts.find(account => account.id === userId)),
       1500
     );
   });

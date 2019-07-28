@@ -42,3 +42,7 @@ export const accounts = {
     makeAccount("Jeff Bayer", "subD")
   ]
 };
+
+// TYPES
+export type Subscription = ReturnType<typeof makeSub>;
+export type Account = ReturnType<typeof makeAccount>;
