@@ -5,6 +5,7 @@
   "keywords": [],
   "main": "src/index.tsx",
   "dependencies": {
+    "eslint-utils": "^1.4.1",
     "react": "16.8.4",
     "react-dom": "16.8.4",
     "react-redux": "7.1.0",
